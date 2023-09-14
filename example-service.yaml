@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: example-service
+  labels:
+    app: example
+spec:
+  replicas: x
+  selector:
+      app: x
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
